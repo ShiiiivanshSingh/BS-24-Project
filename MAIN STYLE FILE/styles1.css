@@ -1,0 +1,146 @@
+/* General body settings */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f19b9b, #f4a4a4); /* Subtle gradient background */
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.1);
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Navbar styles */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #f19b9b;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    padding: 50px 20px;
+    flex: 1;
+}
+
+/* Text content */
+.content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align resource items */
+}
+
+/* Resource items */
+.resource-item {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 600px; /* Sets a max width for a consistent look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+.resource-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Welcome Button */
+.welcome-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.welcome-btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #f19b9b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="FORUM/stylesforum.css">
+</head>
+<body>
+
+    <!-- Header with Sticky Navbar -->
+    <header>
+        <h1 class="logo">Epicentre Lens</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="forum.html" class="nav-button">Forum</a></li>
+                <li><a href="news.html" class="nav-button">News</a></li>
+                <li><a href="resources.html" class="nav-button">Resources</a></li>
+                <li><a href="Predictor.html" class="nav-button">Predictor</a></li>
+                <li><a href="chatbot.html" class="nav-button">Chatbot</a></li>
+                <li><a href="about.html" class="nav-button">About</a></li>
+                <li><a href="loginpage.html" class="nav-button">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="forum-container">
+        <!-- Forum Section for Pinned Tips (Natural Disaster Survival Guide) -->
+        <section class="forum-posts">
+            <!-- Tip #1 -->
+            <div class="post-card pinned-post">
+                <div class="post-header">
+                    <h3>Tip #1: Earthquake Preparedness</h3>
+                    <span class="pinned-label subtle">Pinned</span>
+                </div>
+                <div class="post-body">
+                    <p>Drop, cover, and hold on! Make sure you know the safe spots in your home during an earthquake.</p>
+                </div>
+            </div>
+
+            <!-- Tip #2 -->
+            <div class="post-card pinned-post">
+                <div class="post-header">
+                    <h3>Tip #2: Flood Safety</h3>
+                    <span class="pinned-label subtle">Pinned</span>
+                </div>
+                <div class="post-body">
+                    <p>Know your flood risk. Keep your emergency kit ready and ensure your home is above flood levels.</p>
+                </div>
+            </div>
+
+            <!-- Tip #3 -->
+            <div class="post-card pinned-post">
+                <div class="post-header">
+                    <h3>Tip #3: Hurricane Readiness</h3>
+                    <span class="pinned-label subtle">Pinned</span>
+                </div>
+                <div class="post-body">
+                    <p>Have a storm kit with food, water, and first aid supplies. Know evacuation routes and shelter locations.</p>
+                </div>
+            </div>
+
+            <!-- Tip #4 -->
+            <div class="post-card pinned-post">
+                <div class="post-header">
+                    <h3>Tip #4: Tornado Safety</h3>
+                    <span class="pinned-label subtle">Pinned</span>
+                </div>
+                <div class="post-body">
+                    <p>When a tornado watch is issued, move to your basement or an interior room with no windows.</p>
+                </div>
+            </div>
+
+            <!-- Tip #5 -->
+            <div class="post-card pinned-post">
+                <div class="post-header">
+                    <h3>Tip #5: Wildfire Evacuation</h3>
+                    <span class="pinned-label subtle">Pinned</span>
+                </div>
+                <div class="post-body">
+                    <p>Prepare for evacuation. Ensure your home is fire-resistant and know multiple evacuation routes.</p>
+                </div>
+            </div>
+
+            <!-- New Posts Section -->
+            <div class="new-posts">
+                <h3>New Posts</h3>
+                <div id="newPostsContainer"></div> <!-- New posts will be added here -->
+            </div>
+        </section>
+
+        <!-- Add New Post Section -->
+        <section class="new-post">
+            <h3>Add Your Post</h3>
+            <form id="newPostForm">
+                <input type="text" id="userName" placeholder="Your Name" required />
+                <textarea id="postContent" placeholder="Write your post..." required></textarea>
+                <button type="submit" id="submitPost">Submit</button>
+            </form>
+            <p id="errorMessage" style="color: red; display: none;">Please write something before submitting.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Epicentre Lens</p>
+    </footer>
+
+    <script src="FORUM/scriptforum.js"></script>
+</body>
+</html>

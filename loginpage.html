@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EpicenterLens - Login / Sign Up</title>
+    <link rel="stylesheet" href="LOGIN/styles4 copy.css">
+</head>
+
+<body>
+    <!-- Header Section with Sticky Navbar -->
+    <header>
+        <h1 class="logo">Epicenter Lens</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="forum.html" class="nav-button">Forum</a></li>
+                <li><a href="news.html" class="nav-button">News</a></li>
+                <li><a href="resources.html" class="nav-button">Resources</a></li>
+                <li><a href="Predictor.html" class="nav-button">Predictor</a></li>
+                <li><a href="chatbot.html" class="nav-button">Chatbot</a></li>
+                <li><a href="about.html" class="nav-button">About</a></li>
+                <li><a href="loginpage.html" class="nav-button">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <!-- Form Toggle Buttons -->
+            <div class="auth-toggle">
+                <button class="toggle-btn active" id="login-btn">Login</button>
+                <button class="toggle-btn" id="signup-btn">Sign Up</button>
+            </div>
+
+            <!-- Auth Forms -->
+            <div class="auth-forms">
+                <!-- Login Form -->
+                <form id="login-form" class="auth-form" action="login_process.php" method="POST">
+                    <h2>Login</h2>
+                    <div class="form-group">
+                        <label for="login-username">Username</label>
+                        <input type="text" id="login-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <button type="submit" class="auth-btn">Login</button>
+                    <div class="form-footer">
+                        <p>Don't have an account? <span id="go-to-signup">Sign up</span></p>
+                    </div>
+                </form>
+
+                <!-- Sign Up Form -->
+                <form id="signup-form" class="auth-form" action="LOGIN/login_process.php" method="POST">
+                    <h2>Sign Up</h2>
+                    <div class="form-group">
+                        <label for="signup-username">Username</label>
+                        <input type="text" id="signup-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm-password">Confirm Password</label>
+                        <input type="password" id="signup-confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit" class="auth-btn">Sign Up</button>
+                    <div class="form-footer">
+                        <p>Already have an account? <span id="go-to-login">Login</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 EpicenterLens - Stay Informed, Stay Safe</p>
+    </footer>
+
+    <script src="LOGIN/scriptLOGIN.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* General body settings */
+:root {
+    --primary-color: #f19b9b;
+    --secondary-color: #f4a4a4;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); /* Subtle gradient background */
+    color: #000; /* Black text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full height */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.1);
+    position: sticky; /* Sticky header */
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Navbar styles */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* Main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; /* Padding for smaller screens */
+    flex: 1; /* Allow main content to grow */
+    text-align: center;
+}
+
+/* Text content */
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: black;
+}
+
+/* Welcome Button */
+.welcome-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.welcome-btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px); /* Small lift effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Options Section */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.option-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.option-item h3 {
+    margin-top: 0;
+}
+
+.option-item p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Tips Grid */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Increased space between boxes */
+    padding: 20px; /* Padding around the grid */
+}
+
+.tip-box {
+    background: rgba(255, 255, 255, 0.3); /* Lightly transparent background */
+    border-radius: 10px;
+    padding: 20px; /* Increased padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tip-box:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+    }
+}

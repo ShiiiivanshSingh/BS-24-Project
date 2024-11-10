@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="CHATBOT/stylescbt.css">
+</head>
+<body>
+    
+    <header>
+        <h1 class="logo">Epicentre Lens</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="forum.html" class="nav-button">Forum</a></li>
+                <li><a href="news.html" class="nav-button">News</a></li>
+                <li><a href="resources.html" class="nav-button">Resources</a></li>
+                <li><a href="Predictor.html" class="nav-button">Predictor</a></li>
+                <li><a href="chatbot.html" class="nav-button">Chatbot</a></li>
+                <li><a href="about.html" class="nav-button">About</a></li>
+                <li><a href="loginpage.html" class="nav-button">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">Hello! How can I assist you today?</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script src="CHATBOT/scriptcbt.js"></script>
+  
+</body>
+</html>

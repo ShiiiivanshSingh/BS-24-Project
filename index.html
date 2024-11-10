@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Epicentre Lens provides real-time disaster alerts and safety tools. Stay informed and prepared.">
+    <meta name="keywords" content="disaster, news, safety, community, resources">
+    <meta property="og:title" content="Epicentre Lens">
+    <meta property="og:description" content="Your go-to platform for disaster alerts and community resources.">
+    <meta property="og:image" content="image_url">
+    <title>EpiCentre Lens</title>
+    <link rel="stylesheet" href="MAIN STYLE FILE/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Epicentre Lens</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="forum.html" class="nav-button">Forum</a></li>
+                <li><a href="news.html" class="nav-button">News</a></li>
+                <li><a href="resources.html" class="nav-button">Resources</a></li>
+                <li><a href="Predictor.html" class="nav-button">Predictor</a></li>
+                <li><a href="chatbot.html" class="nav-button">Chatbot</a></li>
+                <li><a href="about.html" class="nav-button">About</a></li>
+                <li><a href="loginpage.html" class="nav-button">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Welcome to Epicentre Lens</h2>
+            <p>Epicentre Lens: Your go-to platform for real-time disaster alerts, safety tools, and historical insights to keep you and your community prepared.</p>
+            <button class="welcome-btn" onclick="window.location.href='resources.html'">Get Started</button>
+        </section>
+
+        <section class="options">
+            <h2>Explore Our Options</h2>
+            <div class="option-item">
+                <h3>News</h3>
+                <p>Discover news related to Natural Calamities.</p>
+                <a href="news.html" class="nav-button">Learn More</a>
+            </div>
+            <div class="option-item">
+                <h3>Community Forum</h3>
+                <p>Join our supportive community to share experiences and gain insights from others.</p>
+                <a href="forum.html" class="nav-button">Join the Forum</a>
+            </div>
+            <div class="option-item">
+                <h3>Resources</h3>
+                <p>Find hotlines and valuable resources.</p>
+                <a href="resources.html" class="nav-button">Find Resources</a>
+            </div>
+            <div class="option-item">
+                <h3>About Us</h3>
+                <p>Learn more about our mission and how we aim to help the masses.</p>
+                <a href="about.html" class="nav-button">Learn More</a>
+            </div>
+            <div class="option-item">
+                <h3>Chatbot</h3>
+                <p>Talk to our AI-powered chatbot for immediate assistance and guidance.</p>
+                <a href="chatbot.html" class="nav-button">Start Chat</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><b><i>Your mental health matters.</i></b></p>
+        <p>For immediate support, contact a professional or reach out to mental health hotlines.</p>
+    </footer>
+
+    <script>
+        const navButtons = document.querySelectorAll('.nav-button');
+        navButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                const href = button.getAttribute('href');
+    
+                // Check if the href is an internal link
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

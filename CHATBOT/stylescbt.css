@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f19b9b, #f4a4a4); /* Subtle gradient background */
+    color: #000; /* Black text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full height */
+}
+.chat-container {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px #b27f7f;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.bot-message {
+    background-color: #e0ffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #f3d9d9;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgb(255, 255, 255, 0.1);
+    /* position: sticky;   */
+    top: 0;
+    z-index: 1000; 
+}
+
+
+header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Navbar styles */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #f19b9b; 
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav ul li a {
+        padding: 10px 0; 
+    }
+}
