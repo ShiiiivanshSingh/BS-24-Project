@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // List of keywords related to disasters to filter articles
     const disasterKeywords = [
         "disaster", "earthquake", "flood", "hurricane", "tsunami", 
-        "wildfire", "volcano", "natural disaster", "storm", "catastrophe",
+        "wildfire", "volcano", "natural disaster",  "catastrophe",
         "drought", "famine", "avalanche", "extreme weather", "emergency"
     ];
 
