@@ -3,12 +3,10 @@
 
 Welcome to _Epicentre Lens_! 🎉  <br>
 Real-Time Disaster Prediction and Awareness Platform <br>
-EPICENTERLENS is a cutting-edge disaster prediction platform designed to keep communities informed, prepared, and safe. By combining advanced predictive technology with real-time data analysis, EPICENTERLENS provides crucial information about impending natural disasters, such as earthquakes, storms, wildfires, and volcanic eruptions.
-<br>
-In addition to disaster predictions, the platform offers historical data, localized news, and real-time updates to keep you informed about risks in your area. With its built-in emergency tools, including alert notifications and emergency assistance buttons, EPICENTERLENS empowers individuals and communities to stay safe and act quickly during critical situations.
+EPICENTERLENS is a cutting-edge disaster prediction platform designed to keep communities informed, prepared, and safe.<br> By combining advanced predictive technology with real-time data analysis, EPICENTERLENS provides crucial information about impending natural disasters, such as earthquakes, storms, wildfires, and volcanic eruptions.
 
 ## **Link To The Website**: 
-🌐 [THRIVESPACE]()
+🌐 [THRIVESPACE](https://bit.ly/3YHZERZ)
 
 ## Table of Contents 📚
 
@@ -33,7 +31,7 @@ Any suggestions are Welcome!<br>
 Contact Me At {Discord}: <br>
 shivanshpratapsingh [578111503891169331]
 
-The Link To The Website: 🌐 [Click Here]( )c
+The Link To The Website: 🌐 [Click Here](https://bit.ly/3YHZERZ)
 
 Or Alternatively  Clone this repository to your local machine:
 
