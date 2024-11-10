@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cache: 'no-cache'  // Ensure we get fresh data by disabling caching
         })
         .then(response => {
+            // Check for rate limit error (status 426)
             if (response.status === 426) {
                 throw new Error('Rate limit exceeded. Please try again later.');
             }
@@ -47,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => {
             console.error("Error fetching news:", error);
-            newsContainer.innerHTML = `<p>${error.message}</p>`;
+            newsContainer.innerHTML = `<p>${error.message}</p>`; // Show user-friendly error message
         });
     }
 
