@@ -57,7 +57,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: white;
-    color: black;
+    color: var(--primary-color);
 }
 
 /* Main content */
@@ -107,7 +107,7 @@ main {
 }
 
 .welcome-btn:hover {
-    background-color: #444;
+    background-color: var(--primary-color);
     transform: translateY(-2px); /* Small lift effect */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }

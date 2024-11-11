@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #f19b9b, #f4a4a4); /* Soft gradient background */
+    background: linear-gradient(to right, #fdf7f2, white); /* Soft gradient background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@ header .logo {
 /* Button for Login and Sign Up */
 .toggle-btn {
     padding: 12px 25px;
-    background-color: #f19b9b;
+    background-color: #fdf7f2;
     color: white;
     border: none;
     border-radius: 5px;
@@ -115,7 +115,7 @@ header .logo {
     width: 100%;
     padding: 12px;
     margin-top: 8px;
-    border: 2px solid #f19b9b;
+    border: 2px solid #fdf7f2;
     border-radius: 5px;
     font-size: 16px;
     color: #333;
@@ -131,7 +131,7 @@ header .logo {
 .auth-btn {
     width: 100%;
     padding: 12px;
-    background-color: #f19b9b;
+    background-color: #fdf7f2;
     color: white;
     border: none;
     border-radius: 5px;
@@ -146,7 +146,7 @@ header .logo {
 
 /* Footer */
 footer {
-    background-color: #f19b9b;
+    background-color: #fdf7f2;
     color: white;
     padding: 10px;
     text-align: center;

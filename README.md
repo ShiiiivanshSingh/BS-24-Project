@@ -16,7 +16,7 @@ EPICENTERLENS is a cutting-edge disaster prediction platform designed to keep co
 
 ## Introduction 🧠
 
-This project aims to provide users with accessible tools and information to manage their mental health effectively. Mental health is a crucial aspect of our overall well-being, and with _ThriveSpace_, we're here to offer support and resources. 🤝
+This project aims to provide users with accessible tools and information to manage their safety effectively. safety is a crucial aspect of our overall well-being, and with _ThriveSpace_, we're here to offer support and resources. 🤝
 
 ## Why EPICENTERLENS? 🔧
 

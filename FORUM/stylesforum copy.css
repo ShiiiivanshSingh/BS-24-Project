@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #f19b9b, #f4a4a4);
+    background: linear-gradient(to right, #fdf7f2, white);
     color: #000;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@ nav ul li a {
 /* Navbar Hover Effect */
 nav ul li a:hover {
     background-color: white;
-    color: #f19b9b;
+    color: #fdf7f2;
 }
 
 /* Mobile responsive navbar */
@@ -170,7 +170,7 @@ nav ul li a:hover {
 /* Reply Button Styling */
 .reply-btn {
     padding: 10px 20px;
-    background-color: #f19b9b;
+    background-color: #fdf7f2;
     color: white;
     border: none;
     border-radius: 5px;
@@ -217,7 +217,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #f19b9b;
+    background-color: #fdf7f2;
     color: white;
     padding: 20px;
     text-align: center;

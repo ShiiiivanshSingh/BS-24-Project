@@ -1,7 +1,7 @@
 /* General body settings */
 :root {
-    --primary-color: #fdf7f2;
-    --secondary-color: white;
+    --primary-color: white;
+    --secondary-color: dda15e;
 }
 
 body {
@@ -27,7 +27,7 @@ header {
     position: sticky; /* Sticky header */
     top: 0;
     z-index: 1000;
-    background-color: #fdf0d5;
+    background-color: #ba5437;
 }
 
 header .logo {
@@ -57,7 +57,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: white;
-    color: black;
+    color: var(--primary-color);
 }
 
 /* Main content */
@@ -74,10 +74,10 @@ main {
 .content {
     text-align: center;
     /* display: flex; */
-    background-color: white;
+    background-color: #ba5437;
     width: 1470px;
     height: 250px;
-    border-radius: 19px;
+    border-radius: 7px;
 }
 
 .content h2 {
@@ -107,7 +107,7 @@ main {
 }
 
 .welcome-btn:hover {
-    background-color: #444;
+    background-color: var(--primary-color);
     transform: translateY(-2px); /* Small lift effect */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
@@ -118,7 +118,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    /* background-color: #fdf0d5; */
+    /* background-color: #ba5437; */
 }
 
 .option-item {
@@ -130,7 +130,7 @@ main {
     max-width: 500px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
-    background-color: #fdf0d5;
+    background-color: #ba5437;
 }
 
 .option-item h3 {
@@ -143,8 +143,8 @@ main {
 
 /* Footer */
 footer {
-    background-color: var(--secondary-color);
-    color: #000;
+    background-color: var(--primary-color);
+    color: white;
     padding: 20px;
     text-align: center;
     width: 100%;

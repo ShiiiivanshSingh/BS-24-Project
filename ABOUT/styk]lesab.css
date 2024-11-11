@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #6db3f2, #1e69c4); /* Calming blue gradient */
+    background: linear-gradient(to right, #fdf7f2, white); /* Calming blue gradient */
     color: #000;
     display: flex;
     flex-direction: column;
@@ -19,13 +19,14 @@ header {
     background: rgba(255, 255, 255, 0.1);
     top: 0;
     z-index: 1000;
+    background-color: #fdf0d5;
 }
 
 header .logo {
     font-family: 'Poppins', sans-serif;
     font-size: 26px;
     font-weight: bold;
-    color: #003366; /* Deep blue */
+    color: black; /* Deep blue */
 }
 
 /* Navbar styles */
@@ -47,8 +48,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #1e69c4;
-    color: white;
+    background-color: white;
+    color: #fdf7f2;
 }
 
 /* Main content */
@@ -99,8 +100,8 @@ main {
 
 /* Footer */
 footer {
-    background-color: #003366;
-    color: white;
+    background-color: #fdf0d5;
+    color: black;
     padding: 20px;
     text-align: center;
     width: 100%;

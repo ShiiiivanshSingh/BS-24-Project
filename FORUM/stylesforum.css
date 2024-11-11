@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #f19b9b, #f4a4a4);
+    background: linear-gradient(to right, #fdf7f2, white);
     color: #000;
     display: flex;
     flex-direction: column;
@@ -19,10 +19,11 @@ body {
             align-items: center;
             padding: 20px 50px;
             background: rgba(255, 255, 255, 0.1);
-            position: sticky; /* Sticky header */
+            /*position: sticky; /* Sticky header */
             top: 0;
             z-index: 1000;
             width: 100%;
+            background-color: #fdf0d5;
         }
 
         header .logo {
@@ -106,11 +107,11 @@ body {
 
 /* Updated Pinned Label */
 .pinned-label {
-    background-color: rgba(241, 155, 155, 0.6);
-    color: rgba(0, 0, 0, 0.7);
+    background-color: #fdf0d5;
+    color: rgba(0, 0, 0, 0.9);
     padding: 5px 10px;
     font-size: 14px;
-    border-radius: 3px;
+    border-radius: 1px;
     opacity: 0.7;
     transition: opacity 0.3s ease;
 }
@@ -121,7 +122,7 @@ body {
 
 .pinned-post .post-body {
     font-size: 16px;
-    color: #333;
+    color: black;
 }
 
 .pinned-post p {
@@ -165,7 +166,7 @@ body {
 /* Reply Button Styling */
 .reply-btn {
     padding: 10px 20px;
-    background-color: #f19b9b;
+    background-color: #db9f6f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -174,7 +175,7 @@ body {
 }
 
 .reply-btn:hover {
-    background-color: #e17a7a;
+    background-color: #ffaa00;
 }
 
 /* New Post Section */
@@ -212,7 +213,7 @@ body {
 
 /* Footer */
 footer {
-    background-color: #f19b9b;
+    background-color: #fdf7f2;
     color: white;
     padding: 20px;
     text-align: center;
